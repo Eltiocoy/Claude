@@ -6,11 +6,11 @@ const input =
 
 const client = new Perplexity();
 
-// "low" already includes web_search and fetch_url plus Perplexity's own system
+// "medium" includes web_search and fetch_url plus Perplexity's own system
 // prompt; passing instructions or model here would override those defaults.
-// Deeper research: "medium", "high" or "xhigh" (slower and more expensive).
+// Lighter and faster: "low". Deeper: "high" or "xhigh" (slower and more expensive).
 const response = await client.responses.create({
-  preset: "low",
+  preset: "medium",
   input,
 });
 
