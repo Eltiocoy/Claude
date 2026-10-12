@@ -1,16 +1,27 @@
+import { parseArgs } from "node:util";
 import Perplexity from "@perplexity-ai/perplexity_ai";
 
+// Presets bundle model, tools and Perplexity's own system prompt; passing
+// instructions or model here would override those defaults.
+// Faster: "fast", "low". Deeper: "high", "xhigh" (slower and more expensive).
+const PRESETS = ["fast", "low", "medium", "high", "xhigh"];
+
+const { values, positionals } = parseArgs({
+  allowPositionals: true,
+  options: { preset: { type: "string", short: "p", default: "medium" } },
+});
+if (!PRESETS.includes(values.preset)) {
+  console.error(`Preset no válido: "${values.preset}". Usa uno de: ${PRESETS.join(", ")}`);
+  process.exit(1);
+}
+
 const input =
-  process.argv.slice(2).join(" ") ||
-  "What are the latest developments in AI inference hardware?";
+  positionals.join(" ") || "What are the latest developments in AI inference hardware?";
 
 const client = new Perplexity();
 
-// "medium" includes web_search and fetch_url plus Perplexity's own system
-// prompt; passing instructions or model here would override those defaults.
-// Faster: "low". Deeper: "high" or "xhigh" (slower and more expensive).
 const response = await client.responses.create({
-  preset: "medium",
+  preset: values.preset,
   input,
 });
 
@@ -24,8 +35,14 @@ if (response.status === "completed") {
     if (item.type !== "search_results") continue;
     for (const r of item.results) byId.set(r.id, r);
   }
+  // Most presets cite as [web:N]; "fast" uses plain [N]. Plain [N] only counts
+  // when N is a result id, since brackets can also appear in ordinary text.
   const cited = [
-    ...new Set([...response.output_text.matchAll(/\[web:(\d+)\]/g)].map((m) => Number(m[1]))),
+    ...new Set(
+      [...response.output_text.matchAll(/\[(web:)?(\d+)\]/g)]
+        .filter((m) => m[1] || byId.has(Number(m[2])))
+        .map((m) => Number(m[2]))
+    ),
   ];
   if (cited.length > 0) {
     console.log("\nFuentes:");
