@@ -2,8 +2,9 @@ import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import Perplexity from '@perplexity-ai/perplexity_ai';
 
-// The API documents a flat results[] array, but for multi-query requests it can
-// return one list per query. Accept both, then drop repeated URLs keeping rank order.
+// Multi-query requests return one flat results[] array (max_results caps the
+// total, not each query). Nested lists are flattened defensively; repeated URLs
+// are dropped keeping rank order.
 export function mergeResults(results) {
   const seen = new Set();
   const merged = [];
