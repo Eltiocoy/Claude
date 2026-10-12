@@ -17,18 +17,25 @@ const response = await client.responses.create({
 if (response.status === "completed") {
   console.log(response.output_text);
 
-  // Each web_search call adds a search_results item; the same URL can appear in several.
-  const sources = new Map();
+  // [web:N] markers refer to search result ids. The same URL can come back under
+  // several ids, so index by id and list only the ones the answer cites.
+  const byId = new Map();
   for (const item of response.output) {
     if (item.type !== "search_results") continue;
-    for (const r of item.results) {
-      if (!sources.has(r.url)) sources.set(r.url, r);
-    }
+    for (const r of item.results) byId.set(r.id, r);
   }
-  if (sources.size > 0) {
+  const cited = [
+    ...new Set([...response.output_text.matchAll(/\[web:(\d+)\]/g)].map((m) => Number(m[1]))),
+  ];
+  if (cited.length > 0) {
     console.log("\nFuentes:");
-    for (const r of sources.values()) {
-      console.log(`[web:${r.id}] ${r.title}${r.date ? ` (${r.date})` : ""}\n    ${r.url}`);
+    for (const id of cited) {
+      const r = byId.get(id);
+      console.log(
+        r
+          ? `[web:${id}] ${r.title}${r.date ? ` (${r.date})` : ""}\n    ${r.url}`
+          : `[web:${id}] (no aparece en los resultados de búsqueda)`
+      );
     }
   }
 } else {
