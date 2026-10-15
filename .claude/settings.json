@@ -3,7 +3,8 @@
     "cloudflare@cloudflare": false,
     "claude-code-setup@claude-plugins-official": false,
     "parenting-frameworks@synced": false,
-    "figma@synced": false
+    "figma@synced": false,
+    "small-business@synced": false
   },
   "extraKnownMarketplaces": {
     "cloudflare": {
