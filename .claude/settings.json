@@ -1,7 +1,9 @@
 {
   "enabledPlugins": {
-    "cloudflare@cloudflare": true,
-    "claude-code-setup@claude-plugins-official": true
+    "cloudflare@cloudflare": false,
+    "claude-code-setup@claude-plugins-official": false,
+    "parenting-frameworks@synced": false,
+    "figma@synced": false
   },
   "extraKnownMarketplaces": {
     "cloudflare": {
