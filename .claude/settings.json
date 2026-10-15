@@ -4,7 +4,11 @@
     "claude-code-setup@claude-plugins-official": false,
     "parenting-frameworks@synced": false,
     "figma@synced": false,
-    "small-business@synced": false
+    "small-business@synced": false,
+    "productivity@synced": false,
+    "enterprise-search@synced": false,
+    "design@synced": false,
+    "brand-voice@synced": false
   },
   "extraKnownMarketplaces": {
     "cloudflare": {
