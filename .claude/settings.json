@@ -1,13 +1,20 @@
 {
+  "enabledPlugins": {
+    "cloudflare@cloudflare": true,
+    "claude-code-setup@claude-plugins-official": true
+  },
   "extraKnownMarketplaces": {
     "cloudflare": {
       "source": {
         "source": "github",
         "repo": "cloudflare/skills"
       }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
     }
-  },
-  "enabledPlugins": {
-    "cloudflare@cloudflare": true
   }
 }
