@@ -8,7 +8,11 @@
     "productivity@synced": false,
     "enterprise-search@synced": false,
     "design@synced": false,
-    "brand-voice@synced": false
+    "brand-voice@synced": false,
+    "admakeai@synced": false,
+    "agency-mcp@synced": false,
+    "logo-maker@synced": false,
+    "miro@synced": false
   },
   "extraKnownMarketplaces": {
     "cloudflare": {
