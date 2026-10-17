@@ -1,0 +1,53 @@
+# Estado del sistema de Adrián Coy
+
+Actualizado: 17 de octubre de 2026. Lee esto primero en cualquier sesión nueva. El historial de chats anteriores no viaja; este archivo sí.
+
+## Reglas de trabajo
+
+- Voz, reglas de redacción y filtro de rigor: skill `criterio-adrian` (`.claude/skills/criterio-adrian/SKILL.md`). Es la fuente única.
+- Agentes en `.claude/agents/`: `investigador`, `despliegue`, `auditor`, `analista-contenido`.
+- Adrián pide honestidad dura: primero fallas y riesgos, cero elogios, nada inventado, números sin confirmar marcados.
+- Cambios que afecten lo que se publica, el gasto o el modelo de una tarea: pedir autorización antes.
+- Sin guiones largos en nada que se escriba para él.
+
+## Tareas programadas (solo existen dos)
+
+| Tarea | Id | Cuándo (CDMX) | Modelo |
+|---|---|---|---|
+| LinkedIn: borrador y auditoría independiente (L/M/V) | trig_01U3pAeHJeTYJv8EfW6rAbtX | Lun, mié y vie 6:47 | Sonnet 5.5 |
+| LinkedIn: publicar aprobado (L/M/V) | trig_01L6XBRnjQUZwBZGVhZjHzKU | Lun, mié y vie 9:07 | Haiku 5.5 |
+
+Función por día: lunes Lectura, miércoles Oficio, viernes Postura. Máximo un post publicado por día.
+
+El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián. El atajo de iPhone "Recordatorios Familia" ya no sirve y se puede borrar.
+
+## Notion
+
+- Base "Cola LinkedIn: aprobación", data source `collection://cbe4c588-d139-4ca6-b201-880574a0448a`.
+- Flujo de Estado: Por auditar, Por revisar, (Adrián decide) Aprobado o Editar o Rechazado, Publicando, Publicado.
+- Columnas que llena Adrián: Estado (para aprobar) y Comentarios clave (quién con poder de decisión comentó o escribió).
+- "Publicado el" lo llena la tarea de publicación.
+- Página "LinkedIn: material de oficio", id `3fb301c5-b325-81c8-8a69-e6fc97e010cf`. Adrián escribe viñetas bajo "Material". La tarea del miércoles usa la más antigua sin marca "(usado ...)". Si está vacía, el miércoles sale como Lectura. Nunca se inventa experiencia.
+
+## Conectores y límites
+
+- La opción de limitar conectores por tarea no existe en el plan de Adrián. Cada tarea arranca con unos 112,000 tokens fijos; quitar conectores globales bajó solo 4%.
+- Lo que sí cambia el gasto: cuántas veces corre cada tarea, el modelo y el largo de las sesiones.
+- Costos medidos el 16 de octubre: borrador 1.10 USD con auditor independiente; publicación 0.49 USD; publicación sin nada que hacer 0.43 USD.
+- La red de las sesiones en la nube bloquea sitios de noticias y tododeia.com. Para tododeia se usa Perplexity con `search_domain_filter: ["tododeia.com"]`. Las tareas programadas sí llegan a los feeds.
+- Metricool: conectado con Instagram, TikTok y YouTube. Falta ligar LinkedIn.
+- vidIQ: Instagram conectado con métricas privadas. Quedan pocos créditos (el plan renueva 150 el 11 de noviembre).
+
+## Pendientes abiertos
+
+1. Fila de Marcos Noder (16 de octubre, 6:00): no salió de ninguna tarea actual y trae el formato viejo. Adrián no ha dicho de dónde vino.
+2. Campaña Buen Fin de Castillo: el auditor dio Revisar. Falta abrir las fuentes (Kantar 2024 o 2025, MOLEC 38% y 33%, Ofertia 55% y 87%), documentar de dónde salen 3,000 y 30,000 packs, y agregar tres debilidades que faltan (línea base, inventario del tomo 3, registro de socios que cierra el 12 de noviembre).
+3. Revisión mensual de LinkedIn (qué temas atrajeron a quien contrata): vivía dentro del Briefing y se perdió. Se puede pedir al agente `analista-contenido` cuando haya al menos 4 posts con Comentarios clave.
+4. Conectores: Adrián usa vidIQ, Goodnotes y Watch Any Video en sus chats, así que se quedan conectados. Ya desconectó Spotify, Superhuman, CV builder, Cloudflare, context_engenieering, Meta Ads, Figma, Miro, Consensus y Penlog.
+5. Primera corrida de Haiku en publicación: lunes 19 de octubre, 9:07. Revisar que publicó bien.
+6. Humanizalo (tododeia.com): sus marcas de texto generado ya están en la skill `criterio-adrian` y en el auditor.
+
+## Lo que viene del sitio tododeia.com y aún no se usa
+
+- Guía "3 servicios para armar tu agencia de IA": diagnóstico gratis del sitio del prospecto. Choca con el diagnóstico de $1,000 de We Create the Box; decide Adrián.
+- Skill gratuita Ads Pro: solo cuando un cliente tenga pauta.

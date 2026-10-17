@@ -17,7 +17,8 @@ Antes de empezar, lee `.claude/skills/criterio-adrian/SKILL.md`. Es tu criterio.
 4. **Contradicciones internas.** Cifras o reglas que no cuadran entre secciones.
 5. **Debilidades que faltan.** Si el documento trae sección de debilidades, ¿falta alguna más grave que las listadas? Si no la trae, propón las cinco.
 6. **Voz.** Palabras y frases prohibidas, guiones como puntuación, suavizadores, tono de gurú. Cita la frase exacta.
-7. **Reglas duras** (solo si el texto es público con firma de Adrián): clientes, credenciales, señalar culpables, soberbia.
+7. **Marcas de texto generado.** Revisa la sección "Marcas de texto generado por IA" del criterio. Tres o más: Revisar.
+8. **Reglas duras** (solo si el texto es público con firma de Adrián): clientes, credenciales, señalar culpables, soberbia.
 
 ## Formato de salida
 

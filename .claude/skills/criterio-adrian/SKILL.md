@@ -68,3 +68,24 @@ Veredicto: **Pasa** (cumple todo), **Revisar** (tono, énfasis o muletillas), **
 - "La apuesta" al inicio: una frase con la decisión.
 - "Las cinco debilidades, de mayor a menor", cada una con su arreglo.
 - Cierre con lo que no se pudo confirmar.
+
+## Marcas de texto generado por IA
+
+Adaptado de la lista de 40 patrones de Humanizalo (tododeia.com, gratis). Aquí van solo las que no cubren las reglas de arriba. Son problemas de voz: se marcan **Revisar**, nunca **Rechazar**.
+
+- Contraste binario o lista negativa: "No es X, es Y", "No X. No Y. Sí Z."
+- Fragmento dramático: "Eso es todo.", "Y punto.", sustantivo suelto seguido de remate.
+- Apertura de carraspeo: "Aquí está la cosa:", "La verdad incómoda es", "Seré claro".
+- Muleta de énfasis: "Que eso te quede claro", "Piénsalo un momento", "Esto importa porque".
+- Declarativa vacía: "las implicaciones son enormes", "lo que está en juego es mucho".
+- Atribución vaga: "los expertos dicen", "se dice que", "los analistas coinciden" sin nombre.
+- Objeto con verbo humano: "los datos nos dicen", "la cultura cambia", "una queja se vuelve arreglo".
+- Narrador a distancia: "Nadie diseñó esto.", "Esto pasa porque", "La gente tiende a".
+- Inflación de importancia: "momento clave", "papel fundamental", "hito".
+- Cierre positivo genérico: "el futuro es prometedor", "tiempos emocionantes".
+- Tríadas forzadas ("innovación, inspiración e impacto") y sinónimos que giran para no repetir palabra.
+- Ritmo parejo: todas las frases del mismo largo, todos los párrafos cierran con remate.
+- Negritas mecánicas y listas con "**Término:** explicación".
+- Muletillas de chatbot: "¡Claro!", "Espero que esto te ayude", "Excelente pregunta".
+
+Si encuentras 3 o más en un texto, el veredicto mínimo es **Revisar**.
