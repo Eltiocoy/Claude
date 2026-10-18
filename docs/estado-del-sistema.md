@@ -40,7 +40,7 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 
 ## Pendientes abiertos
 
-1. Fila de Marcos Noder (16 de octubre, 6:00): no salió de ninguna tarea actual y trae el formato viejo. Adrián no ha dicho de dónde vino.
+1. Cola de LinkedIn al 18 de octubre: dos posts aprobados esperando. Lunes 19 sale el de Markus Noder (Tipo Lectura, se corrigió el Tipo vacío); miércoles 21 sale el de Cal AI (Postura, auditor Revisar). Cerrado: la fila de Noder nació el 16 de octubre a las 6:00, antes del borrador de las 6:47, y su origen no se pudo determinar; el contenido está bien.
 2. Campaña Buen Fin de Castillo: el auditor dio Revisar. Falta abrir las fuentes (Kantar 2024 o 2025, MOLEC 38% y 33%, Ofertia 55% y 87%), documentar de dónde salen 3,000 y 30,000 packs, y agregar tres debilidades que faltan (línea base, inventario del tomo 3, registro de socios que cierra el 12 de noviembre).
 3. Revisión mensual de LinkedIn (qué temas atrajeron a quien contrata): vivía dentro del Briefing y se perdió. Se puede pedir al agente `analista-contenido` cuando haya al menos 4 posts con Comentarios clave.
 4. Conectores: Adrián usa vidIQ, Goodnotes y Watch Any Video en sus chats, así que se quedan conectados. Ya desconectó Spotify, Superhuman, CV builder, Cloudflare, context_engenieering, Meta Ads, Figma, Miro, Consensus y Penlog.
