@@ -1,11 +1,12 @@
 # Estado del sistema de Adrián Coy
 
-Actualizado: 17 de octubre de 2026. Lee esto primero en cualquier sesión nueva. El historial de chats anteriores no viaja; este archivo sí.
+Actualizado: 19 de octubre de 2026. Lee esto primero en cualquier sesión nueva. El historial de chats anteriores no viaja; este archivo sí.
 
 ## Reglas de trabajo
 
 - Voz, reglas de redacción y filtro de rigor: skill `criterio-adrian` (`.claude/skills/criterio-adrian/SKILL.md`). Es la fuente única.
 - Agentes en `.claude/agents/`: `investigador`, `despliegue`, `auditor`, `analista-contenido`.
+- Skill `refero-design` (diseño UI, landings, dashboards), instalada con `npx skills add https://github.com/referodesign/refero_skill` en `.agents/skills/refero-design` con symlink en `.claude/skills/`. Su descripción la pone por encima de otras skills de diseño: en ajustes chicos, pedirle que se salte la investigación. El MCP de Refero (`api.refero.design`) no funciona aún: la red del entorno lo bloquea (403) y el token no está guardado como secreto del entorno.
 - Adrián pide honestidad dura: primero fallas y riesgos, cero elogios, nada inventado, números sin confirmar marcados.
 - Cambios que afecten lo que se publica, el gasto o el modelo de una tarea: pedir autorización antes.
 - Sin guiones largos en nada que se escriba para él.
