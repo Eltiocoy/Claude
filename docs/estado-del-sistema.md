@@ -36,7 +36,7 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 - Costos medidos el 16 de octubre: borrador 1.10 USD con auditor independiente; publicación 0.49 USD; publicación sin nada que hacer 0.43 USD.
 - La red de las sesiones en la nube bloquea sitios de noticias y tododeia.com. Para tododeia se usa Perplexity con `search_domain_filter: ["tododeia.com"]`. Las tareas programadas sí llegan a los feeds.
 - Metricool: conectado con Instagram, TikTok y YouTube. Falta ligar LinkedIn.
-- Composio: Instagram conectado el 18 de octubre (@tiocoy, cuenta Creator, id de conexión instagram_baluba-figaro). Solo lo usa `analista-contenido`, limitado por instrucciones a `INSTAGRAM_GET_*`; la plataforma no fuerza ese límite. Skill `composio` instalada en `.agents/skills/composio`. No se usa el SDK Platform: no hay código de agente en el repo.
+- Composio: Instagram conectado el 18 de octubre (@tiocoy, cuenta Creator, id de conexión instagram_baluba-figaro). Solo lo usa `analista-contenido`, limitado por instrucciones a `INSTAGRAM_GET_*`; la plataforma no fuerza ese límite. Skill `composio` instalada en `.agents/skills/composio`. Probado el 21 de octubre con el agente: lista de piezas e insights por pieza funcionan. No se usa el SDK Platform: no hay código de agente en el repo.
 - vidIQ: Instagram conectado con métricas privadas. Quedan pocos créditos (el plan renueva 150 el 11 de noviembre).
 
 ## Pendientes abiertos
