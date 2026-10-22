@@ -36,7 +36,7 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 - Costos medidos el 16 de octubre: borrador 1.10 USD con auditor independiente; publicación 0.49 USD; publicación sin nada que hacer 0.43 USD.
 - La red de las sesiones en la nube bloquea sitios de noticias y tododeia.com. Para tododeia se usa Perplexity con `search_domain_filter: ["tododeia.com"]`. Las tareas programadas sí llegan a los feeds.
 - Metricool: conectado con Instagram, TikTok y YouTube. Falta ligar LinkedIn.
-- Composio: se probó el 18 al 21 de octubre y se quitó. Daba lo mismo que Metricool por pieza y no da seguidores ganados por Reel (Meta no lo permite). Conexión de Instagram borrada; skill `composio` queda instalada en `.agents/skills/composio` por si se retoma. Instagram por pieza se lee con Metricool, sin piezas de menos de 48 horas. Conversión (seguidores por 1,000 vistas) por pieza no es medible; solo estimación a nivel cuenta.
+- Composio: se probó el 18 al 21 de octubre y se quitó. Daba lo mismo que Metricool por pieza y no da seguidores ganados por Reel (Meta no lo permite). Conexión de Instagram borrada; skill `composio` queda instalada en `.agents/skills/composio` por si se retoma. Instagram por pieza se lee con Metricool, que puede congelar una pieza en su primera sincronización: el Reel DeupW8SFJnG seguía 58% abajo de Instagram 52 horas después, causa desconocida. Las piezas que definan una conclusión se contrastan con la app de Instagram o con vidIQ. Conversión (seguidores por 1,000 vistas) por pieza no es medible; solo estimación a nivel cuenta.
 - vidIQ: Instagram conectado con métricas privadas. Quedan pocos créditos (el plan renueva 150 el 11 de noviembre).
 
 ## Pendientes abiertos
