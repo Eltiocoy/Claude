@@ -1,11 +1,12 @@
 # Estado del sistema de Adrián Coy
 
-Actualizado: 18 de octubre de 2026. Lee esto primero en cualquier sesión nueva. El historial de chats anteriores no viaja; este archivo sí.
+Actualizado: 22 de octubre de 2026. Lee esto primero en cualquier sesión nueva. El historial de chats anteriores no viaja; este archivo sí.
 
 ## Reglas de trabajo
 
 - Voz, reglas de redacción y filtro de rigor: skill `criterio-adrian` (`.claude/skills/criterio-adrian/SKILL.md`). Es la fuente única.
 - Agentes en `.claude/agents/`: `investigador`, `despliegue`, `auditor`, `analista-contenido`.
+- Refero descartado (21 oct): la skill `refero-design` se quitó del repo y el conector exige suscripción de pago. No volver a proponerlo. Si sigue subida en claude.ai, Adrián la borra en Settings → Capabilities.
 - Adrián pide honestidad dura: primero fallas y riesgos, cero elogios, nada inventado, números sin confirmar marcados.
 - Cambios que afecten lo que se publica, el gasto o el modelo de una tarea: pedir autorización antes.
 - Sin guiones largos en nada que se escriba para él.
