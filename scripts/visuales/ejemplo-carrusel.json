@@ -1,0 +1,10 @@
+{
+  "plantilla": "carrusel",
+  "marca": { "fondo": "#0F0F0F", "texto": "#F5F5F5", "acento": "#FFD400", "firma": "@tiocoy" },
+  "slides": [
+    { "kicker": "Lectura", "titulo": "Programar no mata el alcance.", "cuerpo": "Lo que mata el alcance es publicar sin tesis." },
+    { "kicker": "01", "titulo": "La plataforma premia interés, no horario.", "cuerpo": "El feed se arma por afinidad con el tema. La hora mueve poco." },
+    { "kicker": "02", "titulo": "Una idea por pieza.", "cuerpo": "Si cabe en dos frases, es una slide. Si no cabe, son dos piezas." },
+    { "kicker": "Mi apuesta", "titulo": "Cola de aprobación, no autopilot.", "cuerpo": "Yo apruebo, el sistema publica. En ese orden." }
+  ]
+}

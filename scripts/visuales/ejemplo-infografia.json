@@ -1,0 +1,13 @@
+{
+  "plantilla": "infografia",
+  "marca": { "firma": "@tiocoy" },
+  "slides": [ { "kicker": "Sistema", "titulo": "Qué hace Blotato y con qué lo sustituyo", "nota": "oct 2026" } ],
+  "puntos": [
+    "Fuentes: Firecrawl, Watch Any Video, Perplexity",
+    "Redacción: Claude con criterio-adrian",
+    "Visuales: este script, Canva, Fal",
+    "Publicar: Metricool, Make, Buffer",
+    "Analítica: Metricool, vidIQ",
+    "Aprobación: Notion"
+  ]
+}

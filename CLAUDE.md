@@ -6,5 +6,7 @@
   - `despliegue`: convierte un concepto ya aprobado en piezas por canal. Nunca propone conceptos.
   - `auditor`: revisión independiente antes de entregar. Corre sobre el documento final, no en la misma pasada que lo redactó.
   - `analista-contenido`: métricas de YouTube, Instagram, TikTok y LinkedIn convertidas en insights con prueba. Parte de una pregunta de negocio.
+  - `publicador`: programa en Metricool lo aprobado en la cola multicanal de Notion. No redacta.
+- Para publicar, programar, remezclar fuentes en posts o generar visuales, carga la skill `distribucion`. Visuales sin créditos: `scripts/visuales/render.js`.
 - Orden típico de un entregable: investigador, redacción (Adrián y Claude), despliegue si aplica, auditor.
 - Estado actual del sistema (tareas programadas, Notion, pendientes, límites conocidos): `docs/estado-del-sistema.md`. Léelo primero en una sesión nueva: el historial de chats no viaja, este archivo sí.
