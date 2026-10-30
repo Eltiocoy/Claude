@@ -17,6 +17,6 @@ Plantillas y tamaños:
 
 `marca` es opcional: `fondo`, `texto`, `acento`, `fuente`, `firma`. Por defecto negro, blanco, amarillo, Inter y sin firma.
 
-Salida: PNGs numerados y `manifest.json` con las rutas. Revisar las imágenes antes de hospedar (receta 5 de la skill `distribucion`).
+Salida: PNGs numerados y `manifest.json` con las rutas. Si un texto no cabe y se corta, el script lo lista en `desbordados` y sale con código 2: acorta ese texto y vuelve a correr. Revisar las imágenes antes de hospedar (receta 5 de la skill `distribucion`).
 
 Reglas de diseño que ya cumple: una idea por slide, texto grande, sin efectos, mismo sistema visual en todo el carrusel, contenido en fondo oscuro y cierre invertido.

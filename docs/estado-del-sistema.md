@@ -1,6 +1,6 @@
 # Estado del sistema de Adrián Coy
 
-Actualizado: 24 de octubre de 2026. Lee esto primero en cualquier sesión nueva. El historial de chats anteriores no viaja; este archivo sí.
+Actualizado: 30 de octubre de 2026. Lee esto primero en cualquier sesión nueva. El historial de chats anteriores no viaja; este archivo sí.
 
 ## Reglas de trabajo
 
@@ -53,13 +53,23 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 - Composio: se probó el 18 al 21 de octubre y se quitó. Daba lo mismo que Metricool por pieza y no da seguidores ganados por Reel (Meta no lo permite). Conexión de Instagram borrada; skill `composio` queda instalada en `.agents/skills/composio` por si se retoma. Instagram por pieza se lee con Metricool, que puede congelar una pieza en su primera sincronización: el Reel DeupW8SFJnG seguía 58% abajo de Instagram 52 horas después, causa desconocida. Las piezas que definan una conclusión se contrastan con la app de Instagram o con vidIQ. Conversión (seguidores por 1,000 vistas) por pieza no es medible; solo estimación a nivel cuenta.
 - vidIQ: Instagram conectado con métricas privadas. 0 créditos al 24 de octubre; el plan renueva 150 el 11 de noviembre.
 
+## Revisión del 30 de octubre
+
+- Cola LinkedIn: cero filas en Aprobado. Todo lo aprobado ya salió. Pendientes 1 y 5 de abajo quedan cerrados.
+- Choque de reglas: este archivo dice máximo un post por día, pero el escenario Make 6641104 se editó el 28 de octubre para publicar hasta 2 por día (ventanas de 9 y 13 h, L/Mi/J/V). Salieron 2 posts el 22, el 26 y el 28 de octubre. Decide Adrián cuál regla vale.
+- Doble publicador: Make 6641104 corre a las 9:00 y la tarea de Haiku (trig_01L6XBRnjQUZwBZGVhZjHzKU) a las 9:07 con el escenario 6618791. La tarea todavía exporta desde "Arte Canva", aunque desde el 21 de octubre la regla es "Arte PNG". Lo más probable es que Make ya publicó cuando ella llega y la tarea solo gasta unos 0.43 USD por corrida sin hacer nada (no verificado corrida por corrida).
+- La tarea de publicación aún carga Miro, Penlog, Spotify, Superhuman, CV builder, Cloudflare, Meta Ads, Figma y context_engenieering: los conectores se guardaron al crearla y desconectarlos en claude.ai no los quitó de ahí.
+- Fila vacía en la cola LinkedIn creada el 13 de octubre (sin Tema ni Estado). Se puede borrar.
+- Sesiones en la nube: la red bloquea (403) los MCP de los plugins Adobe, Canva, Ahrefs, Amplitude, Figma, HubSpot, Klaviyo, Notion, Similarweb, Slack y Supermetrics. Los conectores directos de Adobe, Canva, Notion y Figma sí funcionan. Para abrir los plugins se agregan sus hosts en Network access del entorno.
+- `render.js` ahora detecta texto cortado y sale con código 2.
+
 ## Pendientes abiertos
 
-1. Cola de LinkedIn al 18 de octubre: dos posts aprobados esperando. Lunes 19 sale el de Markus Noder (Tipo Lectura, se corrigió el Tipo vacío); miércoles 21 sale el de Cal AI (Postura, auditor Revisar). Cerrado: la fila de Noder nació el 16 de octubre a las 6:00, antes del borrador de las 6:47, y su origen no se pudo determinar; el contenido está bien.
+1. Cerrado el 30 de octubre (ver arriba).
 2. Campaña Buen Fin de Castillo: el auditor dio Revisar. Falta abrir las fuentes (Kantar 2024 o 2025, MOLEC 38% y 33%, Ofertia 55% y 87%), documentar de dónde salen 3,000 y 30,000 packs, y agregar tres debilidades que faltan (línea base, inventario del tomo 3, registro de socios que cierra el 12 de noviembre).
 3. Revisión mensual de LinkedIn (qué temas atrajeron a quien contrata): vivía dentro del Briefing y se perdió. Se puede pedir al agente `analista-contenido` cuando haya al menos 4 posts con Comentarios clave.
 4. Conectores: Adrián usa vidIQ, Goodnotes y Watch Any Video en sus chats, así que se quedan conectados. Ya desconectó Spotify, Superhuman, CV builder, Cloudflare, context_engenieering, Meta Ads, Figma, Miro, Consensus y Penlog.
-5. Primera corrida de Haiku en publicación: lunes 19 de octubre, 9:07. Revisar que publicó bien.
+5. Cerrado el 30 de octubre: la última corrida (28 de octubre) terminó sin error. Ver "doble publicador" arriba.
 6. Blotato: se decidió no contratarlo (29 USD al mes). Lo único que hace y aquí no existe: DMs y automatizaciones de DM en Instagram y Facebook. Si Adrián corre un embudo por DM, se revisa (ManyChat o app propia de Meta).
 7. Humanizalo (tododeia.com): sus marcas de texto generado ya están en la skill `criterio-adrian` y en el auditor.
 

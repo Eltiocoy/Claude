@@ -146,17 +146,25 @@ async function main() {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: w, height: h }, deviceScaleFactor: 1 });
   const archivos = [];
+  const desbordados = [];
   for (let i = 0; i < paginas.length; i++) {
     await page.setContent(paginas[i], { waitUntil: 'load' });
     const archivo = path.join(outDir, `${plantilla}-${String(i + 1).padStart(2, '0')}.png`);
     await page.screenshot({ path: archivo, type: 'png' });
     archivos.push(archivo);
+    // body tiene overflow:hidden: si el texto no cabe, se corta sin aviso. Lo detectamos aquí.
+    const alto = await page.evaluate(() => document.body.scrollHeight);
+    if (alto > h) desbordados.push({ archivo, alto });
   }
   await browser.close();
 
-  const manifest = { plantilla, ancho: w, alto: h, archivos, generado: new Date().toISOString() };
+  const manifest = { plantilla, ancho: w, alto: h, archivos, desbordados, generado: new Date().toISOString() };
   fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
   console.log(JSON.stringify(manifest, null, 2));
+  if (desbordados.length) {
+    console.error(`Texto cortado en ${desbordados.length} imagen(es): acorta el texto antes de publicar.`);
+    process.exit(2);
+  }
 }
 
 main().catch((e) => {
