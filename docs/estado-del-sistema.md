@@ -64,11 +64,12 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 - Fila vacía en la cola LinkedIn creada el 13 de octubre (sin Tema ni Estado). Se puede borrar.
 - Sesiones en la nube: la red bloquea (403) los MCP de los plugins Adobe, Canva, Ahrefs, Amplitude, Figma, HubSpot, Klaviyo, Notion, Similarweb, Slack y Supermetrics. Los conectores directos de Adobe, Canva, Notion y Figma sí funcionan. Para abrir los plugins se agregan sus hosts en Network access del entorno.
 - `render.js` ahora detecta texto cortado y sale con código 2.
+- El agente `investigador` no puede abrir fuentes en la nube: WebFetch no llega a la mayoría de los dominios (inegi, gob.mx, kantar) y Perplexity devolvió 401 (cuota). Firecrawl sí abre todo, incluso PDFs, pero no está en las herramientas del agente. Agregar `mcp__Firecrawl__firecrawl_search` y `mcp__Firecrawl__firecrawl_scrape` a su línea `tools` requiere la aprobación de Adrián. Mientras tanto, la verificación final la hace la sesión principal con Firecrawl.
 
 ## Pendientes abiertos
 
 1. Cerrado el 30 de octubre (ver arriba).
-2. Campaña Buen Fin de Castillo: el auditor dio Revisar. Falta abrir las fuentes (Kantar 2024 o 2025, MOLEC 38% y 33%, Ofertia 55% y 87%), documentar de dónde salen 3,000 y 30,000 packs, y agregar tres debilidades que faltan (línea base, inventario del tomo 3, registro de socios que cierra el 12 de noviembre).
+2. Campaña Buen Fin de Castillo: fuentes revisadas el 30 de octubre en `docs/castillo-buen-fin-fuentes.md` (MOLEC y cierre del registro verificados; Ofertia 55% y 87% sin fuente). Falta aplicarlo al documento de la campaña, que no está en el repo ni en Notion. Antes: el auditor dio Revisar. Falta abrir las fuentes (Kantar 2024 o 2025, MOLEC 38% y 33%, Ofertia 55% y 87%), documentar de dónde salen 3,000 y 30,000 packs, y agregar tres debilidades que faltan (línea base, inventario del tomo 3, registro de socios que cierra el 12 de noviembre).
 3. Revisión mensual de LinkedIn (qué temas atrajeron a quien contrata): vivía dentro del Briefing y se perdió. Se puede pedir al agente `analista-contenido` cuando haya al menos 4 posts con Comentarios clave.
 4. Conectores: Adrián usa vidIQ, Goodnotes y Watch Any Video en sus chats, así que se quedan conectados. Ya desconectó Spotify, Superhuman, CV builder, Cloudflare, context_engenieering, Meta Ads, Figma, Miro, Consensus y Penlog.
 5. Cerrado el 30 de octubre: la última corrida (28 de octubre) terminó sin error. Ver "doble publicador" arriba.
