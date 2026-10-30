@@ -64,7 +64,7 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 - Fila vacía en la cola LinkedIn creada el 13 de octubre (sin Tema ni Estado). Se puede borrar.
 - Sesiones en la nube: la red bloquea (403) los MCP de los plugins Adobe, Canva, Ahrefs, Amplitude, Figma, HubSpot, Klaviyo, Notion, Similarweb, Slack y Supermetrics. Los conectores directos de Adobe, Canva, Notion y Figma sí funcionan. Para abrir los plugins se agregan sus hosts en Network access del entorno.
 - `render.js` ahora detecta texto cortado y sale con código 2.
-- El agente `investigador` no puede abrir fuentes en la nube: WebFetch no llega a la mayoría de los dominios (inegi, gob.mx, kantar) y Perplexity devolvió 401 (cuota). Firecrawl sí abre todo, incluso PDFs, pero no está en las herramientas del agente. Agregar `mcp__Firecrawl__firecrawl_search` y `mcp__Firecrawl__firecrawl_scrape` a su línea `tools` requiere la aprobación de Adrián. Mientras tanto, la verificación final la hace la sesión principal con Firecrawl.
+- El agente `investigador` no puede abrir fuentes en la nube: WebFetch no llega a la mayoría de los dominios (inegi, gob.mx, kantar) y Perplexity devolvió 401 (cuota). Firecrawl sí abre todo, incluso PDFs. Adrián aprobó el 30 de octubre agregar `firecrawl_search` y `firecrawl_scrape` a las herramientas del agente y ya están en su línea `tools`. Pendiente de probar en una corrida real: cada scrape de PDF cuesta unos 40 créditos de Firecrawl y una página web unos 5.
 
 ## Pendientes abiertos
 
