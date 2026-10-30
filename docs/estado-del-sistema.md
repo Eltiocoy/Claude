@@ -17,9 +17,11 @@ Actualizado: 30 de octubre de 2026. Lee esto primero en cualquier sesión nueva.
 | Tarea | Id | Cuándo (CDMX) | Modelo |
 |---|---|---|---|
 | LinkedIn: borrador y auditoría independiente (L/M/V) | trig_01U3pAeHJeTYJv8EfW6rAbtX | Lun, mié y vie 6:47 | Sonnet 5.5 |
-| LinkedIn: publicar aprobado (L/M/V) | trig_01L6XBRnjQUZwBZGVhZjHzKU | Lun, mié y vie 9:07 | Haiku 5.5 |
+| LinkedIn: publicar aprobado (L/M/V) | trig_01L6XBRnjQUZwBZGVhZjHzKU | PAUSADA el 30 oct | Haiku 5.5 |
 
 Función por día: lunes Lectura, miércoles Oficio, viernes Postura. Máximo un post publicado por día.
+
+Desde el 30 de octubre el único publicador de LinkedIn es Make 6641104 (gratis, toma "Arte PNG", 1 post por día). La tarea de Haiku quedó pausada, no borrada: se reactiva si Make falla.
 
 El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián. El atajo de iPhone "Recordatorios Familia" ya no sirve y se puede borrar.
 
@@ -48,7 +50,7 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 - Metricool: marca 7457864 (tiocoy), zona America/Mexico_City, conectada con Instagram, TikTok y YouTube. Falta ligar LinkedIn (sí tiene métricas de LinkedIn, Blotato no). Threads, X, Facebook, Bluesky y Pinterest se ligan desde la app si se quieren. Calendario vacío al 24 de octubre. Mejor hora Instagram según Metricool: miércoles a viernes de 10 a 12 h.
 - Red de la nube: bloquea subidas directas por curl a fal.media y api.notion.com. Para hospedar un PNG desde una tarea se usa Google Drive por conector (probado) con Drive ligado en Metricool, o Adrián lo sube desde el chat de escritorio.
 - Fal: cuenta activa sin bloqueo de cobro. Precios del 24 de octubre: nano-banana-pro 0.15 USD por imagen, flux schnell 0.003 USD por megapíxel, kling 2.5 turbo 0.07 USD por segundo, veo3 fast 0.15 USD por segundo, ElevenLabs 0.05 USD por mil caracteres.
-- Watch Any Video: 30 de 60 minutos gratis usados; pasa a solo pago el 1 de noviembre (60 USD al año o 8 al mes).
+- Watch Any Video: 30 de 60 minutos gratis usados; pasa a solo pago el 1 de noviembre (60 USD al año o 8 al mes). Sustituto gratis probado el 30 oct: la skill `watch-video` NO sirve en la nube (YouTube bloqueado por la red, 403). Para solo transcripción de YouTube usar vidIQ (`vidiq_video_transcript`) cuando renueve créditos; para análisis visual, `watch-video` en Claude de escritorio o pagar 8 USD solo el mes que se necesite.
 - OpusClip: plan PRO con API, sin cuentas sociales ligadas. Buffer: ligado en Make (TikTok e Instagram), plan desconocido.
 - Composio: se probó el 18 al 21 de octubre y se quitó. Daba lo mismo que Metricool por pieza y no da seguidores ganados por Reel (Meta no lo permite). Conexión de Instagram borrada; skill `composio` queda instalada en `.agents/skills/composio` por si se retoma. Instagram por pieza se lee con Metricool, que puede congelar una pieza en su primera sincronización: el Reel DeupW8SFJnG seguía 58% abajo de Instagram 52 horas después, causa desconocida. Las piezas que definan una conclusión se contrastan con la app de Instagram o con vidIQ. Conversión (seguidores por 1,000 vistas) por pieza no es medible; solo estimación a nivel cuenta.
 - vidIQ: Instagram conectado con métricas privadas. 0 créditos al 24 de octubre; el plan renueva 150 el 11 de noviembre.
@@ -56,9 +58,9 @@ El Morning Briefing se borró el 17 de octubre porque no le funcionó a Adrián.
 ## Revisión del 30 de octubre
 
 - Cola LinkedIn: cero filas en Aprobado. Todo lo aprobado ya salió. Pendientes 1 y 5 de abajo quedan cerrados.
-- Choque de reglas: este archivo dice máximo un post por día, pero el escenario Make 6641104 se editó el 28 de octubre para publicar hasta 2 por día (ventanas de 9 y 13 h, L/Mi/J/V). Salieron 2 posts el 22, el 26 y el 28 de octubre. Decide Adrián cuál regla vale.
-- Doble publicador: Make 6641104 corre a las 9:00 y la tarea de Haiku (trig_01L6XBRnjQUZwBZGVhZjHzKU) a las 9:07 con el escenario 6618791. La tarea todavía exporta desde "Arte Canva", aunque desde el 21 de octubre la regla es "Arte PNG". Lo más probable es que Make ya publicó cuando ella llega y la tarea solo gasta unos 0.43 USD por corrida sin hacer nada (no verificado corrida por corrida).
-- La tarea de publicación aún carga Miro, Penlog, Spotify, Superhuman, CV builder, Cloudflare, Meta Ads, Figma y context_engenieering: los conectores se guardaron al crearla y desconectarlos en claude.ai no los quitó de ahí.
+- Choque de reglas resuelto: Make 6641104 se había editado el 28 de octubre para publicar hasta 2 por día y salieron 2 posts el 22, el 26 y el 28. Se regresó a 1 por día (filtro "Nada publicado hoy"); la ventana de 13 h queda como reintento. Razón: con 3 borradores por semana, 2 por día solo deja días vacíos y pone a competir dos posts el mismo día.
+- Doble publicador resuelto: la tarea de Haiku de las 9:07 llegaba después de Make y además exportaba desde "Arte Canva", regla vieja. Quedó pausada.
+- La tarea pausada aún carga Miro, Penlog, Spotify, Superhuman, CV builder, Cloudflare, Meta Ads, Figma y context_engenieering: los conectores se guardaron al crearla y desconectarlos en claude.ai no los quitó de ahí.
 - Fila vacía en la cola LinkedIn creada el 13 de octubre (sin Tema ni Estado). Se puede borrar.
 - Sesiones en la nube: la red bloquea (403) los MCP de los plugins Adobe, Canva, Ahrefs, Amplitude, Figma, HubSpot, Klaviyo, Notion, Similarweb, Slack y Supermetrics. Los conectores directos de Adobe, Canva, Notion y Figma sí funcionan. Para abrir los plugins se agregan sus hosts en Network access del entorno.
 - `render.js` ahora detecta texto cortado y sale con código 2.
